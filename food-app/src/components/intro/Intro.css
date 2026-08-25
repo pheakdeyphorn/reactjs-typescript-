@@ -1,0 +1,19 @@
+.intro-container {
+  position: relative;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-img {
+  width: 100%;
+}
+
+.intro-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 12px 24px;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}

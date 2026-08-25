@@ -1,0 +1,38 @@
+.menu-container {
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-list {
+  width: 50%;
+}
+
+.menu-list .items {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.menu-list .menu-head {
+  text-align: center;
+}
+
+.menu-list .menu-title {
+  letter-spacing: 5px;
+}
+
+.menu-list .menu-subtitle {
+  color: #ccc;
+}
+
+.menu-image {
+  width: 50%;
+}
+
+.menu-image img {
+  width: 500px;
+  border-radius: 5px;
+}
