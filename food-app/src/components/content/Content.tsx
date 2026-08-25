@@ -7,7 +7,9 @@ const Content = () => {
   return (
     <div className="content-container">
       <Home></Home>
+
       <Menu></Menu>
+
       <Contact></Contact>
     </div>
   );

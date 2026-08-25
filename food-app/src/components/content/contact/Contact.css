@@ -1,0 +1,39 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  color: #607d8b;
+  font-weight: bold;
+}
+
+input {
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  font: inherit;
+}
+
+button {
+  border: none;
+  display: inline-block;
+  padding: 20px;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+button:hover {
+  background-color: #ccc;
+  color: #000;
+}
