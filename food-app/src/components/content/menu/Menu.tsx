@@ -1,5 +1,30 @@
 import "./Menu.css";
 
+const menuLists = [
+  {
+    title: "Bread Basked",
+    sub_title: "Assortment of fresh baked fruit breads and muffins 5.50",
+  },
+  {
+    title: "Honey Almond Granola with Fruits",
+    sub_title:
+      "Natural cereal of honey toasted oats, raisins, almonds and dates 7.00",
+  },
+  {
+    title: "Belgian Waffle",
+    sub_title: "Vanilla flavored batter with malted flour 7.50",
+  },
+  {
+    title: "Scrambled eggs",
+    sub_title:
+      "Scrambled eggs, roasted red pepper and garlic, with green onions 7.50",
+  },
+  {
+    title: "Blueberry Pancakes",
+    sub_title: "With syrup, butter and lots of berries 8.50",
+  },
+];
+
 const Menu = () => {
   return (
     <div className="container">
@@ -9,42 +34,12 @@ const Menu = () => {
           <br />
 
           <div className="items">
-            <div className="item">
-              <h4 className="menu-title">Bread Basked</h4>
-              <p className="menu-subtitle">
-                Assortment of fresh baked fruit breads and muffins 5.50
-              </p>
-            </div>
-
-            <div className="item">
-              <h4 className="menu-title">Honey Almond Granola with Fruits</h4>
-              <p className="menu-subtitle">
-                Natural cereal of honey toasted oats, raisins, almonds and dates
-                7.00
-              </p>
-            </div>
-
-            <div className="item">
-              <h4 className="menu-title">Belgian Waffle</h4>
-              <p className="menu-subtitle">
-                Vanilla flavored batter with malted flour 7.50
-              </p>
-            </div>
-
-            <div className="item">
-              <h4 className="menu-title">Scrambled eggs</h4>
-              <p className="menu-subtitle">
-                Scrambled eggs, roasted red pepper and garlic, with green onions
-                7.50
-              </p>
-            </div>
-
-            <div className="item">
-              <h4 className="menu-title">Blueberry Pancakes</h4>
-              <p className="menu-subtitle">
-                With syrup, butter and lots of berries 8.50
-              </p>
-            </div>
+            {menuLists.map((item) => (
+              <div className="item">
+                <h4 className="menu-title">{item.title}</h4>
+                <p className="menu-subtitle">{item.sub_title}</p>
+              </div>
+            ))}
           </div>
         </div>
 

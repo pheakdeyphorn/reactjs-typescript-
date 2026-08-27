@@ -3,15 +3,15 @@ import "./Nav.css";
 
 const menuList = [
   {
-    link: "#Home",
+    link: "#home",
     label: "Home",
   },
   {
-    link: "#Menu",
+    link: "#menu",
     label: "Menu",
   },
   {
-    link: "#Contact",
+    link: "#contact",
     label: "Contact",
   },
 ];
