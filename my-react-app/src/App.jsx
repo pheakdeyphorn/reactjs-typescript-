@@ -11,6 +11,7 @@ import State from "./component/usestate/State.jsx";
 import axios from "axios";
 import FancyText from "./component/render_tree/FancyText.jsx";
 import InspirationGenerator from "./component/render_tree/InspirationGenerator.jsx";
+import Gallery from "./component/memory/Gallery.jsx";
 
 // fetch("https://catfact.ninja/fact")
 //   .then((res) => res.json())
@@ -72,8 +73,13 @@ function App() {
       {/* <button onClick={fetchCatFact}>Generate Cat Fact</button>
       <p>{catFact}</p> */}
 
-      <FancyText title text="Get Inspired App" />
-      <InspirationGenerator />
+      {/* RENDER TREE */}
+      {/* <FancyText title text="Get Inspired App" />
+      <InspirationGenerator /> */}
+
+      {/* MEMORY */}
+      <Gallery />
+      <Gallery />
     </div>
   );
 }
