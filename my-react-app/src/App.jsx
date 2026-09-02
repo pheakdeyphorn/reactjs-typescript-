@@ -9,21 +9,24 @@ import List from "./component/list/List.jsx";
 import Form from "./component/usestate/Form.jsx";
 import State from "./component/usestate/State.jsx";
 import axios from "axios";
+import FancyText from "./component/render_tree/FancyText.jsx";
+import InspirationGenerator from "./component/render_tree/InspirationGenerator.jsx";
 
 // fetch("https://catfact.ninja/fact")
 //   .then((res) => res.json())
 //   .then((data) => setCatFact(data.fact));
 
 function App() {
-  const [catFact, setCatFact] = useState("");
-  const fetchCatFact = () => {
-    axios
-      .get("https://catfact.ninja/fact")
-      .then((res) => setCatFact(res.data.fact));
-  };
-  useEffect(() => {
-    fetchCatFact();
-  }, []);
+  //FETCHING
+  // const [catFact, setCatFact] = useState("");
+  // const fetchCatFact = () => {
+  //   axios
+  //     .get("https://catfact.ninja/fact")
+  //     .then((res) => setCatFact(res.data.fact));
+  // };
+  // useEffect(() => {
+  //   fetchCatFact();
+  // }, []);
 
   // const apiData = [
   //   { id: 1, name: "Bopha", position: "Developer" },
@@ -65,8 +68,12 @@ function App() {
       {/* LIST */}
       {/* <List /> */}
 
-      <button onClick={fetchCatFact}>Generate Cat Fact</button>
-      <p>{catFact}</p>
+      {/* FETCHING */}
+      {/* <button onClick={fetchCatFact}>Generate Cat Fact</button>
+      <p>{catFact}</p> */}
+
+      <FancyText title text="Get Inspired App" />
+      <InspirationGenerator />
     </div>
   );
 }
