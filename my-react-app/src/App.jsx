@@ -14,6 +14,9 @@ import InspirationGenerator from "./component/render_tree/InspirationGenerator.j
 import Gallery from "./component/memory/Gallery.jsx";
 import StateObject from "./component/stateObject/stateObject.jsx";
 import SignupForm from "./component/signup_form/SignupForm.jsx";
+import Counter from "./component/useEffect/Counter.jsx";
+import FootballerSearch from "./component/useEffect/FootballerSearch.jsx";
+import { FruitsSearch } from "./component/useEffect/FruitSearch.jsx";
 
 // fetch("https://catfact.ninja/fact")
 //   .then((res) => res.json())
@@ -87,7 +90,12 @@ function App() {
       {/* <StateObject /> */}
 
       {/* signup_form */}
-      <SignupForm />
+      {/* <SignupForm /> */}
+
+      {/* useEffect */}
+      {/* <Counter /> */}
+      {/* <FootballerSearch /> */}
+      <FruitsSearch />
     </div>
   );
 }
